@@ -1,0 +1,23 @@
+{
+  "name": "mehedy-whatsapp-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal WhatsApp automation platform by MEHEDY",
+  "type": "module",
+  "engines": { "node": ">=20.0.0" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "check": "node --check src/server.js && node --check src/bot/engine.js && node --check src/routes/api.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "pino": "^9.6.0",
+    "pg": "^8.13.1",
+    "qrcode": "^1.5.4"
+  }
+}
