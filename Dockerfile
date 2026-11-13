@@ -5,4 +5,5 @@ RUN npm install --omit=dev
 COPY . .
 ENV NODE_ENV=production
 EXPOSE 3000
+RUN apk add --no-cache git
 CMD ["npm", "start"]
